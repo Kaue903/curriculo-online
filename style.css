@@ -51,7 +51,7 @@ html, body {
 
 .light {
   --bg-color: #ffffff;
-  --second-bg-color: #0058cc; /* CORRIGIDO: faltava o # */
+  --second-bg-color: #0058cc; 
   
   --text-color: #000000;
   --second-text-color: #0058cc;
@@ -228,112 +228,142 @@ figure {
 /* Estilos das seções */
 section {
   padding: 5rem 10rem 5rem;
-  overflow-x: hidden; /* ADICIONADO: evita overflow horizontal */
-  max-width: 100vw;   /* ADICIONADO: limita largura ao viewport */
+  overflow-x: hidden; 
+  max-width: 100vw;  
 }
 
+/* ==================== SEÇÃO HOME ==================== */
 .home {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.home .home-mac {
-  width: 40%;
-  position: absolute;
-  z-index: -2;
-  right: 5rem;
-  border-radius: 20px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8rem; 
+    gap: 4rem;
 }
 
 .home-presentation {
-  min-width: 45rem;
+    flex: 1; 
+    min-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .home-presentation p {
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 2rem;
-  line-height: 3rem;
-  padding-left: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding-left: 2px;
 }
 
 .home-presentation #name {
-  font-weight: 800;
-  font-size: 7rem;
-  line-height: 10rem;
-  color: var(--text-color);
-  letter-spacing: -2px;
-  line-height: 0.8;
+    font-weight: 900;
+    font-size: 7rem;
+    line-height: 1; 
+    color: var(--text-color);
+    letter-spacing: -2px;
 }
 
 .home-presentation #last-name {
-  font-weight: 300;
-  font-size: 6rem;
-  line-height: 0.8;
-  color: var(--text-color);
-  letter-spacing: -2px;
-  padding-bottom: 1.5rem;
+    font-weight: 300;
+    font-size: 6rem;
+    line-height: 1;
+    color: var(--text-color);
+    letter-spacing: -2px;
+    margin-bottom: 2rem; 
 }
 
 .home-presentation h3 p {
-  color: var(--text-color);
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 1.7rem;
-  line-height: 3rem;
-  display: inline;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.7rem;
+    line-height: 3rem;
+    display: inline;
 }
 
 .home-presentation h3 {
-  font-weight: 700;
-  font-size: 2.5rem;
-  line-height: 4.2rem;
-  color: var(--second-text-color);
-  letter-spacing: 1.5px;
-  padding-bottom: 8rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: var(--second-text-color);
+    letter-spacing: 1px;
+    margin-bottom: 4rem; 
 }
 
 .home-presentation h3 span strong {
-  color: var(--text-color);
-  font-size: 2.5rem;
-  font-weight: 400;
-  line-height: 4.2rem;
+    color: var(--text-color);
+    font-size: 2.5rem;
+    font-weight: 400;
 }
 
 .home-presentation h3 span {
-  letter-spacing: 1.5px;
-  color: var(--text-color);
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 32px;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 2rem;
 }
 
+/* ==================== BOTÕES DA HOME ==================== */
 .button {
-  max-width: 44rem;
-  display: flex;
-  align-items: center;
-  gap: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
-.project-button, .contact-button {
-  font-weight: 400;
-  font-size: 1.8rem;
-  line-height: 3rem;
-  padding: 0.5rem 6rem;
-  border: 2px solid var(--text-color);
-  border-radius: 3rem;
-  color: var(--text-color);
-  letter-spacing: 1px;
-  transition: all .45s ease;
+.project-button {
+    font-weight: 700; 
+    font-size: 1.8rem;
+    padding: 1.2rem 4rem;
+    background-color: var(--second-bg-color); 
+    color: #ffffff; 
+    border: 2px solid var(--second-bg-color);
+    border-radius: 3rem;
+    letter-spacing: 1px;
+    transition: all .3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.project-button:hover, .contact-button:hover {
-  transform: scale(0.9);
-  color: var(--second-text-color);
-  border: 2px solid var(--second-text-color);
+.project-button:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    filter: brightness(1.1); 
+}
+
+.contact-button {
+    font-weight: 400;
+    font-size: 1.8rem;
+    padding: 1.2rem 4rem;
+    background-color: transparent;
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    border-radius: 3rem;
+    letter-spacing: 1px;
+    transition: all .3s ease;
+}
+
+.contact-button:hover {
+    transform: translateY(-5px);
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+/* ==================== IMAGEM DA HOME ==================== */
+.home-mac {
+    flex: 1;
+    max-width: 50%; 
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2); 
+    animation: flutuar 4s ease-in-out infinite; 
+}
+
+@keyframes flutuar {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
 }
 
 /* ---------------- About ----------------------- */
@@ -344,68 +374,42 @@ section {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
-  overflow: hidden; /* ADICIONADO: evita overflow horizontal */
-
-  opacity: 0;
-  transform: translateX(30px); /* CORRIGIDO: era translateX(100%), causava barra de scroll */
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.about.visible {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.about-img {
-  transition: all .45s ease;
-  background: transparent;
+  overflow: hidden; 
 }
 
 .about-img img {
-  width: 40rem;
-  height: 40rem;
+  width: 45rem;
+  height: 60rem;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 24px;
+  box-shadow: var(--shadow-soft);
+  transition: all .45s ease;
 }
 
-.about-img:hover {
+.about-img:hover img {
   transform: translateY(-8px);
-  cursor: pointer;
 }
 
 .about-text {
   max-width: 55rem;
-  transition: all .45s ease;
 }
 
 .about-text h2 {
-  font-size: var(--h2-font);
-  line-height: 1;
-  font-weight: normal;
-  padding-bottom: 3rem;
-  color: var(--second-text-color);
-  font-weight: 400;
+  font-weight: 600;
   font-size: 5.5rem;
   line-height: 6.6rem;
-}
-
-.about-text h2 span {
-  padding-top: 10px;
-  color: var(--text-color);
-  border-top: 2px solid var(--second-text-color);
+  color: var(--second-bg-color);
+  padding-bottom: 3rem;
 }
 
 .about-text p {
   color: var(--text-color);
-  font-size: var(--p-font);
-  margin-bottom: 2rem;
-  word-spacing: 1px;
-  text-align: justify;
-  font-weight: 400;
   font-size: 1.8rem;
-  line-height: 2.2rem;
+  line-height: 2.8rem;
+  margin-bottom: 2rem;
+  text-align: justify;
 }
 
 .button-cv {
@@ -428,16 +432,13 @@ section {
   transition: all .45s ease;
 }
 
-.button-cv:hover {
-  transform: scale(0.9);
-}
 
 .btn-cv:hover {
   background: var(--second-bg-color);
-  border: 1px solid var(--text-color);
   color: var(--button-text-color-hover);
+  box-shadow: 0 8px 20px var(--glow-color);
+  transform: translateY(-5px);
 }
-
 img.balls {
   position: absolute;
   bottom: -6rem;
@@ -704,7 +705,7 @@ form textarea {
 
 .contact-form .submit {
   display: inline-block;
-  background-color: rgb(255, 255, 255); /* CORRIGIDO: era 'backgroun-color' (typo) */
+  background-color: rgb(255, 255, 255); 
   color: rgb(0, 0, 0);
   width: 160px;
   font-weight: 500;
@@ -716,7 +717,7 @@ form textarea {
 }
 
 .contact-form .submit:hover {
-  background: white; /* CORRIGIDO: era 'whi' (typo) */
+  background: white; 
   color: var(--second-text-color);
   cursor: pointer;
 }
@@ -828,27 +829,30 @@ form textarea {
 }
 
 @media screen and (max-width: 1180px) {
-  .home {
-    flex-direction: column;
-  }
-  .home .home-mac {
-    width: 100%;
-    position: static;
-    z-index: 1;
-    right: 5rem;
-  }
+    .home {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 12rem;
+    }
+    
+    .home-presentation {
+        align-items: center; 
+    }
 
-  .home-mac {
-    width: 50% !important;
-    height: auto;
-    padding-top: 50px;
-  }
-  .about-img img {
-    display: none !important;
-  }
-  .carousel-container {
-    padding: 0 1rem;
-  }
+    .home-mac {
+        width: 80% !important; 
+        max-width: 100%;
+        margin-top: 4rem; 
+    }
+    
+    .about-img img {
+        display: none !important;
+    }
+    
+    .carousel-container {
+        padding: 0 1rem;
+    }
 }
 
 @media (max-width: 920px) {
