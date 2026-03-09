@@ -30,21 +30,13 @@ O projeto foi construído com foco em **Clean Code** e **UX/UI**, apresentando m
 
 ---
 
-## 🎨 Preview da Interface
-
-<div align="center">
-  <img src="https://github.com/kaue903/curriculo-online/raw/main/seu-print-aqui.png" width="800px" alt="Screenshot do Portfólio">
-</div>
-
----
-
 ## 🤝 Contato
 
 Estou aberto a oportunidades e colaborações! 
 
 * **LinkedIn:** linkedin.com/in/kauersilva
 * **GitHub:** [@kaue903](https://github.com/kaue903)
-* **E-mail:** [kauer903@gmail.com]
+* **E-mail:** kauer903@gmail.com
 
 ---
 <p align="center">Desenvolvido com 💙 por Kauê Rodrigues</p>
