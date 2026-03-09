@@ -26,7 +26,7 @@ O projeto foi construído com foco em **Clean Code** e **UX/UI**, apresentando m
 ### Outras Competências:
 * **Lógica de Programação:** C++.
 * **Versionamento:** Git & GitHub.
-* **Design & Organização:** Figma, VS Code, Notion.
+* **Design & Organização:** Figma e VS Code
 
 ---
 
