@@ -261,10 +261,10 @@ section {
 
 .home-presentation #name {
     font-weight: 900;
-    font-size: 7rem;
     line-height: 1; 
     color: var(--text-color);
     letter-spacing: -2px;
+    font-size: clamp(7rem, 5vw, 4rem);
 }
 
 .home-presentation #last-name {
@@ -378,6 +378,7 @@ section {
   margin: 0;
   overflow: hidden; 
 }
+
 
 .about-img img {
   width: 45rem;
