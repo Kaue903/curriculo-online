@@ -2,7 +2,7 @@
 
 Este é o meu portfólio pessoal e currículo online, desenvolvido para centralizar minhas informações profissionais, projetos e habilidades de forma interativa e responsiva.
 
-🚀 **Link para visualização:** [Acesse aqui o meu site](https://kaue903.github.io/curriculo-online/)
+🚀 **Link para visualização:** [Acesse aqui o meu site]( https://kaue903.github.io/curriculo-online/)
 
 ---
 
